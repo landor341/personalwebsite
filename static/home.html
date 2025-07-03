@@ -1,0 +1,74 @@
+<html lang="us">
+    <header>
+        <style>
+            html {
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                background-color: #a2abb5;
+                min-height: 100vh;
+                height:fit-content;
+
+                .title {
+                    height: 30vh;
+                    width: 100%;
+                    background-image: url(/resources/images/scenery/home.JPG);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+                .content {
+                    background-color: #ffffff;
+                    position: absolute;
+                    left: 50%;
+                    top: 20vh;
+                    transform: translate(-50%);
+                    padding: 2% 5%;
+                    width: 65%;
+
+                    .footer-spacer {
+                        height: 20vh;
+                        margin: 0 0 -20vh 0;
+                        background: transparent;
+                    }
+                }
+            }
+        </style>
+    </header>
+    <body>
+        <div class="title">
+            <div class="text">
+
+            </div>
+        </div>
+        <div class="content"> 
+            <p>You've discovered my website! It may not be much, but it's the start of a big project!</p>
+<p>My name is Landon Faris, a senior computer engineering student at the University of Wisconsin-Milwaukee who has a passion for computer science and DevOps automation. I've been writing code ever since I was 5 years old and this website is meant to act as a testament to the wealth of knowledge and experience that I've acquired throughout my life.</p>
+<p>I currently work as a DevOps intern at Rockwell Automation with 3 prior years of experience including 21 months (part-time school year included) as a full stack developer for an Agile team using a MEAN stack, a summer as an intern working under three managers creating various software tools while also gaining experience testing motor drives and PCBs, and a summer working on a software testing team improving a testing automation platform.</p>
+<p>This website is fully self-hosted and uses a number of tools to maintain a robust and secure infrastructure.</p>
+<ul>
+<li>Running locally on a mini PC</li><li>Machine configured as web server completely declaratively with NixOS</li><li>DNS Routing through Cloudflare Zero Trust</li><li>Express Node server running typescript that preprocesses page content using Handlebars and markdown</li>
+</ul>
+<p>Here's a brief outlook for what else I plan to include here:</p>
+<ul>
+<li>Gitlab runners (on a private gitlab instance!)</li><li>Ansible automation for server testing and deployment</li><li>A blog like platform that can be updated without having to touch the server in any way</li><li>Nixos configurations for quickly and deterministically deploying new infrastructure</li><li>Containizered deployment of gitlab runners and redundant web servers</li><li>Handling of subdomains for my various services</li>
+</ul>
+
+  <script>
+    function copyToClipboard(button) {
+      const codeBlock = button.parentElement.querySelector('code');
+      const text = codeBlock.innerText.replace(/＜/g, '<').replace(/＞/g, '>');
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = 'Copied!';
+        setTimeout(() => button.innerText = 'Copy', 2000);
+      });
+    }
+  </script>
+
+            <div class="footer-spacer"></div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>

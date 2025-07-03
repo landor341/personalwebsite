@@ -1,0 +1,52 @@
+<html lang="us">
+    <header>
+        <style>
+            html {
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                background-color: #a2abb5;
+                min-height: 100vh;
+                height:fit-content;
+
+                .title {
+                    height: 30vh;
+                    width: 100%;
+                    background-image: url({{ backgroundImage }});
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+                .content {
+                    background-color: #ffffff;
+                    position: absolute;
+                    left: 50%;
+                    top: 20vh;
+                    transform: translate(-50%);
+                    padding: 2% 5%;
+                    width: 65%;
+
+                    .footer-spacer {
+                        height: 20vh;
+                        margin: 0 0 -20vh 0;
+                        background: transparent;
+                    }
+                }
+            }
+        </style>
+    </header>
+    <body>
+        <div class="title">
+            <div class="text">
+
+            </div>
+        </div>
+        <div class="content"> 
+            {{{ mdContent }}}
+            <div class="footer-spacer"></div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>
